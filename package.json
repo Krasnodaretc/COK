@@ -1,0 +1,27 @@
+{
+  "name": "egorzhivagin",
+  "version": "1.0.0",
+  "description": "COK",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krasnodaretc/COK.git"
+  },
+  "author": "Krasnodaretc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krasnodaretc/COK/issues"
+  },
+  "homepage": "https://github.com/Krasnodaretc/COK#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

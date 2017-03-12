@@ -1,0 +1,181 @@
+body
+	margin: 0px
+	padding: 0px
+	background-color: #eef5fb
+.podlog
+	background-color: #567dcc
+	height: 70px
+	border: 0px
+	margin-top: 130px
+.navbar
+	background-color: #567dcc
+	height: 70px
+	border: 0px
+	transition: all 0.3s
+	&:hover
+		box-shadow: 0px 0px 10px -2px
+.menu
+	height: 100%
+	.navbar-collapse
+		display: flex !important
+		justify-content: space-between
+		height: 100% !important
+		.navbar-nav
+			position: relative
+			.menu__li.active
+				color: #567dcc
+				background-color: #f7f7f7
+			.menu__li
+				display: flex
+				align-items: center
+				justify-content: center
+				font-size: 15px
+				height: 100%
+				transition: all 0.2s ease
+				color: #fff
+				padding: 10px
+				&:not(.active):hover
+					color: #fff;
+					background-color: #6992e4
+					cursor: pointer
+			.menu__li.navbar-header
+				font-size: 17px
+	.navbar-header
+		position: absolute
+		left: 0px
+		top: 0px
+		transform: translateX(-110%)
+
+.section-main
+	&:hover
+		.partial.active
+			box-shadow: 0px 2px 22px -2px
+			border-radius: 3px
+	.partial-common
+		position: relative
+		.partial
+			opacity: 0
+			position: absolute
+			left: 0px
+			top: 0px
+			width: 100%
+			transition: all 0.3s
+			padding: 20px
+			height: 0px
+			z-index: -1
+			margin-bottom: 50px
+		.partial.active
+			opacity: 1
+			height: auto
+			z-index: 1
+.h1
+	text-align: center
+	font-size: 30px
+	font-weight: 600
+	line-height: 2
+
+.h2
+	text-align: center
+	font-size: 19px
+	margin-bottom: 25px
+	font-weight: 600
+.adress
+	font-style: italic
+	font-size: 17px
+	text-align: center
+	margin-bottom: 15px
+.info
+	padding: 7px 0px
+	font-size: 16px
+	margin-bottom: 15px
+.label
+	color: #000
+	font-size: 17px
+	margin-bottom: 15px
+.table
+	.table-tr
+		&:hover
+			.table-td:not([rowspan])
+				background-color: #e8e7f7
+		.table-td
+			vertical-align: middle
+			border: 1px solid #c7c9fb
+		.table-td:first-child
+			width: 4%
+		.table-td:first-child,
+		.table-td:last-child
+			vertical-align: middle
+			text-align: center
+	.table-tr:first-child
+		font-weight: 600
+		.table-td
+			font-weight: 600
+			font-size: 16px
+			color: #2e6da4
+			text-align: center
+.main__info-small
+	text-align: center
+	padding: 0px 10px
+
+
+.a
+	padding: 6px 0px
+	font-size: 16px
+	color: #5cb85c
+	transition: all 0.2s ease
+	will-change: color, background-color
+	display: block
+	border-radius: 3px
+	&:hover
+		text-decoration: none
+		color: #1b3dea
+		background-color: #88ec88
+		padding: 6px 10px
+.a.a-inline
+	display: inline
+.ol
+	line-height: 2
+	font-weight: 600
+	font-size: 18px
+	text-align: center
+	.li
+		font-weight: 300
+		font-size: 16px
+		text-align: left
+.podpis
+	font-size: 18px
+	text-align: center
+.text
+	margin-bottom: 15px
+	font-size: 15px
+.strong
+	font-weight: 600
+.forms__li
+	font-weight: 300
+	font-size: 15px
+	transition: all 0.2s
+	&:hover
+		background-color: #f5dada
+		padding: 0px 4px
+
+.face:not(:first-child)
+	padding-top: 20px
+
+.faces-text
+	text-align: center
+img
+	float: left
+	max-width: 200px
+	max-height: 200px
+	margin-left: 150px
+
+
+
+.fixed
+    position: fixed
+    margin-top: 0px
+    left: 0px
+    top: 0px
+    right: 0px
+    opacity: 1
+    z-index: 2333

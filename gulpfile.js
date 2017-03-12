@@ -7,7 +7,7 @@ var include = require('gulp-include');
 
 gulp.task('watch', ['sass'], function() {
     gulp.watch('app/sass/*.sass', ['sass']);
-    gulp.watch('app/**/*.html', browserSync.reload);
+    gulp.watch('app/**/*.html', ['include-html']);
     gulp.watch('app/**/*.js', browserSync.reload);
 });
 
@@ -31,5 +31,13 @@ gulp.task('sass', function () {
 	.pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('include-html', function() {
+    return gulp.src('app/partials/index.html')
+    .pipe(include())
+        .on('error', console.log)
+    .pipe(gulp.dest('app'))
+    .pipe(browserSync.reload({stream: true}))
+});
 
-gulp.task('default', ['watch', 'sass', 'browser-sync']);
+
+gulp.task('default', ['watch', 'sass', 'include-html', 'browser-sync']);

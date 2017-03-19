@@ -1,0 +1,14 @@
+<object width="422" height="156" codebase="http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+        <param name="Movie" value="/top.swf">
+        <param name="Quality" value="High">
+        <param name="_cx" value="5080">
+        <param name="_cy" value="5080">
+        <param name="Src" value="/images/top.swf">
+        <param name="WMode" value="opaque">
+        <param name="Menu" value="true">
+        <param name="AllowScriptAccess" value="always">
+        <param name="Scale" value="ShowAll">
+        <param name="DeviceFont" value="false">
+        <param name="EmbedMovie" value="false">
+        <embed width="422" height="156" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" src="/top.swf" type="application/x-shockwave-flash" embedmovie="false" devicefont="false" scale="ShowAll" allowscriptaccess="always" menu="false" wmode="opaque" quality="High">
+</object>

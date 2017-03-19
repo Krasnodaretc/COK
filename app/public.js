@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	var currentData;
 	var currentHeight;
+	var headerHeight = $('header').height();
 
 	$('.partial.active')
 	.siblings().css({
@@ -24,13 +25,13 @@ $(document).ready(function() {
 			'overflow': 'hidden'
 		});
 
-		if ( $(window).scrollTop() >= 130 ) {
+		if ( $(window).scrollTop() >= headerHeight + 40 ) {
 			$(window).scrollTop(0);
 		}
 	});
 
 	$(window).scroll( function () {
-		if ( $(window).scrollTop() >= 130 ) {
+		if ( $(window).scrollTop() >= headerHeight + 40 ) {
 			$('.navbar.container-fluid').addClass('fixed');
 		} else {
 			$('.navbar.container-fluid').removeClass('fixed');

@@ -2,6 +2,9 @@ $(document).ready(function() {
 	var currentData;
 	var currentHeight;
 	var headerHeight = $('header').height();
+	var headerWidth = $('.center').width();
+
+	$('.container').css({"max-width" : headerWidth});
 
 	$('.partial.active')
 	.siblings().css({

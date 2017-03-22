@@ -2,12 +2,14 @@ body
 	margin: 0px
 	padding: 0px
 	background-color: #eef5fb
+	font-family: 'Open Sans', serif
 	header
 		display: flex
 		align-items: stretch
 		justify-content: center
 		height: 200px
 		padding: 20px 0px
+		background-color: #fff
 		.center
 			display: flex
 		*
@@ -53,13 +55,22 @@ body
 					background-color: #6992e4
 					cursor: pointer
 			.menu__li.navbar-header
-				font-size: 17px
+				font-size: 44px
+				background-color: transparent
+				color: #fff
+				// font-weight: 600
+				// font-style: italic
 	.navbar-header
 		position: absolute
 		left: 0px
 		top: 0px
-		transform: translateX(-110%)
-
+		transform: translateX(-150%)
+		font-family: 'Roboto Slab', serif
+		transition: text-shadow 0.3s ease-in
+		&:hover
+			text-shadow: 0px 0px 1px
+			cursor: pointer
+			background-color: transparent !important
 .img__row
 	display: flex
 	flex-wrap: wrap
@@ -73,14 +84,13 @@ body
 		border-radius: 4px
 		transition: all 0.2s ease-in
 		&:hover
-			box-shadow: 0px 0px 21px 5px
+			box-shadow: 0px 0px 15px 0px
 
 .section-main
 	margin-top: 50px
 	&:hover
 		.partial.active
 			box-shadow: 0px 2px 22px -2px
-			border-radius: 3px
 	.partial-common
 		position: relative
 		.partial
@@ -94,6 +104,8 @@ body
 			height: 0px
 			z-index: -1
 			margin-bottom: 50px
+			background-color: #fff
+			border-radius: 14px
 		.partial.active
 			opacity: 1
 			height: auto

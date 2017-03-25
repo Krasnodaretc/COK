@@ -12,7 +12,7 @@ $(document).ready(function() {
 		'overflow': 'hidden'
 	});
 
-	$('.menu__li').click( function(){
+	$('.menu__li:not(.dropdown)').click( function(){
 		$(this).addClass('active').siblings().removeClass('active');
 		// currentTab = $('.menu__li').hasClass('active');
 		currentData = $(this).data("article");
@@ -31,6 +31,10 @@ $(document).ready(function() {
 		if ( $(window).scrollTop() >= headerHeight + 40 ) {
 			$(window).scrollTop(0);
 		}
+	});
+
+	$('.menu__li.dropdown').click( function(){
+		$('.menu__dropdown').toggleClass('open');
 	});
 
 	$(window).scroll( function () {
